@@ -25,24 +25,29 @@ border-bottom: solid rgb(0, 0, 0) 3px;
     
 
 }
-#container{
+.container{
     padding: 10px;
+    
+   
 }
-#book_container{
+.book_container{
     padding:15px;
     width:25%;
     background-color:black ;
     color: aliceblue;
     border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    
 
 }
-#book_container h2{
+.book_container h2{
     background-color:aqua;
     border-radius: 10px;
     color:black;
     padding-left: 10px;
 }
-#book_container button{
+.book_container button{
     background-color:aqua;
     border-radius: 5px;
     padding-left: 10px;
@@ -76,7 +81,7 @@ border-bottom: solid rgb(0, 0, 0) 3px;
     left:0;
     opacity: 0.7;
     z-index: 1;
-    display:block;
+    display:none;
 }
 .popup_msg{
     background-color: aquamarine;
@@ -87,6 +92,8 @@ border-bottom: solid rgb(0, 0, 0) 3px;
     top:20%;
     left:37%;
     z-index:2;
+    display:none;
+    
     
 }
 .popup_msg input{
@@ -103,7 +110,8 @@ border-bottom: solid rgb(0, 0, 0) 3px;
  #desc{
 background-color:aqua;
     width:80%;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 2px;
     padding: 40px;
     border-radius: 20px;
     font-size: 20px;
@@ -117,16 +125,20 @@ background-color:aqua;
 .popup_msg button{
     background-color: black;
     color: aliceblue;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
     padding-left: 10px;
     padding-right: 10px;
-    margin:10px
-    border=none;
-    border-radius: 5px;
+    margin:10px;
+    border:none;
+    border-radius: 10px;
     font-size:15px;
     margin-top:20px;
     margin-bottom:5px;
     
+    
 
+}
+.popup_msg input:focus{
+ outline: none;
 }

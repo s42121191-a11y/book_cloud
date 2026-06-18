@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookes</title>
     <link rel ="stylesheet" href="style.css">
+
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,15 +16,16 @@
     YOUR COLLECTION
     
 </div>
-<div id="container">
-    <div id="book_container">
+<div class="container">
+    <div class="book_container">
         <h2>BOOK NAME</h2><br>
         <h4>AUTHOR</h4><br>
         <P>DESCRIPTION Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolores aliquam odio placeat illum eos neque qui fuga cum quibusdam!</P><br>
-        <button>delete</button>
-
+        <button  onclick="del_book(event)">delete</button>
+     
 
     </div>
+    
 </div>
 <div class="popup_overlay"></div>
 
@@ -32,8 +34,8 @@
         <input type="text" placeholder="BOOK TITLE" id="b_name">
         <input type="text" placeholder="AUTHOR NAME" id="a_name">
         <input type="textarea" placeholder="DESCRIPTION" id="desc">
-        <button id="add_btn">ADD</button>
-        <button id="cancle"> CANCLE</button>
+        <button id="add_popup_msg">ADD</button>
+        <button id="cancle_btn"> CANCLE</button>
 
 
     </form>
